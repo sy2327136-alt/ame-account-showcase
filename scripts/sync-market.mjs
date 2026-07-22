@@ -153,7 +153,7 @@ for (const game of games) {
 console.log(`共 ${balanced.length} 个候选，开始逐个核对详情页状态…`);
 const verified = (await mapLimit(balanced, 10, async (item, index) => {
   const html = await fetchText(`https://www.pzds.com/goodsDetails/${item.code}/6`, 2);
-  const available = /立即购买/.test(html);
+  const available = !/商品已下架|商品已出售/.test(html);
   if ((index + 1) % 25 === 0) console.log(`核验进度 ${index + 1}/${balanced.length}`);
   return available ? item : null;
 })).filter(Boolean);
@@ -176,7 +176,7 @@ const output = {
   version: 3,
   updatedAt: new Date().toISOString(),
   pricingNote: "精选服务参考价按公开在售参考价上浮30%，包含信息筛选、资料整理与咨询服务；最终库存、实名和换绑条件以客服实时复核为准。",
-  sourceAudit: { visibleOnFrontend: false, verifiedRule: "详情页存在立即购买，且不存在已下架/已出售", selectedCount: selected.length },
+  sourceAudit: { visibleOnFrontend: false, verifiedRule: "详情页未出现商品已下架或商品已出售", selectedCount: selected.length },
   products: selected.map(buildProduct)
 };
 
