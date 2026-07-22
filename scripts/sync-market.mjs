@@ -130,7 +130,7 @@ function buildProduct(item, order) {
 }
 
 console.log("开始抓取 12 个热门游戏的实时在售列表…");
-const listTasks = games.flatMap((game) => Array.from({ length: 10 }, (_, index) => ({ game, page: index + 1 })));
+const listTasks = games.flatMap((game) => Array.from({ length: 20 }, (_, index) => ({ game, page: index + 1 })));
 const listResults = await mapLimit(listTasks, 7, async ({ game, page }, index) => {
   const url = `https://www.pzds.com/goodsList/${game.sourceGameId}/6?page=${page}`;
   const html = await fetchText(url);
@@ -170,7 +170,7 @@ while (selected.length < 200) {
   round += 1;
 }
 
-if (selected.length < 200) throw new Error(`当前核验后只有 ${selected.length} 个可立即购买商品，未用假商品补足。请增加抓取页数后重试。`);
+if (selected.length < 200) throw new Error(`当前核验后只有 ${selected.length} 个有效商品，未用假商品补足。请增加抓取页数后重试。`);
 
 const output = {
   version: 3,
