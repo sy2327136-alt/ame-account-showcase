@@ -28,12 +28,12 @@
     const tags = (product.tags || []).slice(0, 2).map((tag) => `<span class="tag">${GM.escape(tag)}</span>`).join("");
     return `<article class="product-card">
       <button class="favorite ${favorites.includes(product.id) ? "is-on" : ""}" data-favorite="${GM.escape(product.id)}" aria-label="收藏商品">♥</button>
-      <button class="card-image" data-detail="${GM.escape(product.id)}"><img src="${GM.escape(product.coverImage)}" alt="${GM.escape(product.title)}" loading="lazy">${product.badge ? `<span class="card-badge">${GM.escape(product.badge)}</span>` : ""}<span class="photo-count">▧ ${(product.images || []).length}图</span></button>
+      <button class="card-image" data-detail="${GM.escape(product.id)}"><img src="${GM.escape(product.coverImage)}" alt="${GM.escape(product.title)}" loading="lazy">${product.badge ? `<span class="card-badge">${GM.escape(product.badge)}</span>` : ""}<span class="photo-count">分类展示封面</span></button>
       <div class="card-body">
         <div class="card-game-line">${game ? `<span class="mini-game-logo ${game.brand ? "is-brand" : ""}"><img src="${game.icon}" alt=""></span>` : ""}<span><strong>${GM.escape(product.gameName)}</strong><small>${GM.escape(product.platform)} · ${GM.escape(product.server)}</small></span></div>
         <button class="card-title" data-detail="${GM.escape(product.id)}">${GM.escape(product.title)}</button>
         <p class="card-subtitle">${GM.escape(product.subtitle)}</p>
-        <div class="tags"><span class="verify-tag">✓ 已核验展示</span>${tags}</div>
+        <div class="tags"><span class="verify-tag">✓ 公开在售精选</span>${tags}</div>
         <div class="price-row"><div class="price"><strong>${GM.money(product.price)}</strong>${product.originalPrice ? `<del>${GM.money(product.originalPrice)}</del>` : ""}</div><button class="detail-link" data-detail="${GM.escape(product.id)}">查看详情</button></div>
       </div>
     </article>`;
@@ -99,9 +99,10 @@
     const game = gameInfo(product.gameName);
     const images = (product.images?.length ? product.images : [product.coverImage]).slice(0, 30);
     const specs = Object.entries(product.specs || {}).map(([label, value]) => `<div class="spec"><span>${GM.escape(label)}</span><strong>${GM.escape(value)}</strong></div>`).join("");
+    const sourceLink = product.sourceUrl ? `<a class="source-link" href="${GM.escape(product.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看公开来源记录 ↗</a>` : "";
     modal.innerHTML = `<div class="modal-card" role="dialog" aria-modal="true"><button class="modal-close" data-close-modal aria-label="关闭">✕</button><div class="modal-grid">
       <div class="gallery"><div class="gallery-main"><img data-main-image src="${GM.escape(images[0])}" alt="${GM.escape(product.title)}"></div><div class="thumbs">${images.map((src, index) => `<button class="thumb ${index === 0 ? "is-active" : ""}" data-thumb="${GM.escape(src)}"><img src="${GM.escape(src)}" alt="商品图片 ${index + 1}"></button>`).join("")}</div></div>
-      <div class="detail"><div class="detail-game">${game ? `<span class="mini-game-logo ${game.brand ? "is-brand" : ""}"><img src="${game.icon}" alt=""></span>` : ""}<span><b>${GM.escape(product.gameName)}</b><small>商品编号 ${GM.escape(product.id)}</small></span></div><h2>${GM.escape(product.title)}</h2><p class="lead">${GM.escape(product.subtitle)}</p><div class="detail-price"><small>展示价格</small>${GM.money(product.price)}</div><div class="protection-row"><span>✓ 已核验展示</span><span>✓ 高清实拍图</span><span>✓ 客服一对一</span></div><p class="detail-description">${GM.escape(product.description)}</p><h3 class="detail-section-title">商品参数</h3><div class="spec-grid">${specs}</div><div class="contact-note"><b>温馨提示</b><span>商品库存、换绑条件和充值价格以客服实时核对为准，请勿向任何人提供支付密码。</span></div><div class="detail-actions"><button class="btn" data-copy-wechat>复制客服微信 GF999314</button><button class="btn ghost" data-modal-favorite="${GM.escape(product.id)}">收藏商品</button></div></div>
+      <div class="detail"><div class="detail-game">${game ? `<span class="mini-game-logo ${game.brand ? "is-brand" : ""}"><img src="${game.icon}" alt=""></span>` : ""}<span><b>${GM.escape(product.gameName)}</b><small>商品编号 ${GM.escape(product.id)}</small></span></div><h2>${GM.escape(product.title)}</h2><p class="lead">${GM.escape(product.subtitle)}</p><div class="detail-price"><small>精选服务参考价</small>${GM.money(product.price)}</div><div class="protection-row"><span>✓ 公开信息整理</span><span>✓ 重点参数筛选</span><span>✓ 客服实时复核</span></div><p class="detail-description">${GM.escape(product.description)}</p><h3 class="detail-section-title">商品参数</h3><div class="spec-grid">${specs}</div><div class="contact-note"><b>重要说明</b><span>当前图片为分类展示封面，不是账号实拍；参考价包含筛选、资料整理与咨询服务。库存、实名、换绑和最终配置需在下单前由客服再次核验。</span></div>${sourceLink}<div class="detail-actions"><button class="btn" data-copy-wechat>复制客服微信 GF999314</button><button class="btn ghost" data-modal-favorite="${GM.escape(product.id)}">收藏商品</button></div></div>
     </div></div>`;
     modal.classList.add("is-open");
     document.body.style.overflow = "hidden";
