@@ -130,9 +130,9 @@ function buildProduct(item, order) {
 }
 
 console.log("开始抓取 12 个热门游戏的实时在售列表…");
-const listTasks = games.flatMap((game) => Array.from({ length: 20 }, (_, index) => ({ game, page: index + 1 })));
-const listResults = await mapLimit(listTasks, 7, async ({ game, page }, index) => {
-  const url = `https://www.pzds.com/goodsList/${game.sourceGameId}/6?page=${page}`;
+const listTasks = Array.from({ length: 3 }, (_, round) => games.flatMap((game) => Array.from({ length: 10 }, (_, index) => ({ game, page: index + 1, round: round + 1 })))).flat();
+const listResults = await mapLimit(listTasks, 5, async ({ game, page, round }, index) => {
+  const url = `https://www.pzds.com/goodsList/${game.sourceGameId}/6?page=${page}&refresh=${round}-${Date.now()}`;
   const html = await fetchText(url);
   const items = parseList(html, game);
   if ((index + 1) % 10 === 0) console.log(`列表进度 ${index + 1}/${listTasks.length}`);
