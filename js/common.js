@@ -24,11 +24,14 @@
       return next;
     },
     copyWechat(button) {
-      navigator.clipboard.writeText(config.contactWechat || "GF999314").then(() => {
+      const value = config.contactWechat || "GF999314";
+      const done = () => {
         const old = button.textContent;
         button.textContent = "已复制微信号";
         setTimeout(() => { button.textContent = old; }, 1600);
-      });
+      };
+      if (navigator.clipboard?.writeText) navigator.clipboard.writeText(value).then(done).catch(() => window.prompt("复制客服微信号", value));
+      else window.prompt("复制客服微信号", value);
     },
     initShell() {
       document.querySelectorAll("[data-copy-wechat]").forEach((button) => button.addEventListener("click", () => this.copyWechat(button)));
@@ -37,6 +40,11 @@
       if (menu && nav) menu.addEventListener("click", () => nav.classList.toggle("is-open"));
       const year = document.querySelector("[data-year]");
       if (year) year.textContent = new Date().getFullYear();
+      document.querySelectorAll("[data-global-search]").forEach((form) => form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const query = new FormData(form).get("q") || "";
+        location.href = `./accounts.html?q=${encodeURIComponent(query)}`;
+      }));
     }
   };
 

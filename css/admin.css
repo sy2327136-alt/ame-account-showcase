@@ -1,4 +1,8 @@
-.admin-body { min-height:100vh; }
+.admin-body { --bg:#07080c; --panel:#10131b; --panel-soft:#0b0e14; --text:#f6f8ff; --muted:#969eae; --line:rgba(255,255,255,.1); --accent:#e4b95f; --accent-dark:#a9792f; --shadow:0 18px 55px rgba(0,0,0,.34); min-height:100vh; color:var(--text); background:#07080c; }
+.admin-body .brand { color:#fff; }
+.admin-body .brand-avatar { width:42px; height:42px; border-color:rgba(228,185,95,.45); border-radius:12px; }
+.admin-body .btn { color:#17130b; border-color:var(--gold); background:linear-gradient(135deg,var(--gold-2),var(--gold)); box-shadow:0 8px 20px rgba(228,185,95,.15); }
+.admin-body .btn.ghost { color:#eee2c2; border-color:rgba(228,185,95,.3); background:transparent; }
 .admin-header { position:sticky; top:0; z-index:40; border-bottom:1px solid var(--line); background:rgba(7,8,12,.9); backdrop-filter:blur(18px); }
 .admin-header-inner { min-height:68px; display:flex; align-items:center; gap:16px; }
 .admin-header .admin-title { margin-left:8px; color:var(--muted); font-size:13px; }
