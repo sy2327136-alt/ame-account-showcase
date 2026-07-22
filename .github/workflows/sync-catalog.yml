@@ -1,0 +1,41 @@
+name: Sync verified account catalog
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/sync-market.mjs"
+      - ".github/workflows/sync-catalog.yml"
+  schedule:
+    - cron: "23 */4 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verified-account-catalog
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch and verify 200 live accounts
+        run: node scripts/sync-market.mjs
+      - name: Publish refreshed catalog
+        run: |
+          if git diff --quiet -- data/products.json; then
+            echo "Catalog is already current"
+            exit 0
+          fi
+          git config user.name "gf-catalog-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/products.json
+          git commit -m "catalog: refresh 200 verified accounts"
+          git push

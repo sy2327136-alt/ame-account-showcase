@@ -5,9 +5,10 @@
 
   function card(product) {
     const game = window.GameDirectory?.find(product.gameName);
+    const cover = window.ProductVisuals?.cover(product) || product.coverImage;
     return `<article class="product-card home-product-card">
       <button class="favorite ${GM.favorites().includes(product.id) ? "is-on" : ""}" data-home-favorite="${GM.escape(product.id)}" aria-label="收藏">♥</button>
-      <a href="./${product.productType === "account" ? "accounts" : "recharge"}.html?game=${encodeURIComponent(product.gameName)}" class="card-image"><img src="${GM.escape(product.coverImage)}" alt="${GM.escape(product.title)}" loading="lazy">${product.badge ? `<span class="card-badge">${GM.escape(product.badge)}</span>` : ""}<span class="photo-count">公开精选</span></a>
+      <a href="./${product.productType === "account" ? "accounts" : "recharge"}.html?game=${encodeURIComponent(product.gameName)}" class="card-image"><img src="${GM.escape(cover)}" alt="${GM.escape(product.title)}" loading="lazy">${product.badge ? `<span class="card-badge">${GM.escape(product.badge)}</span>` : ""}<span class="photo-count">▧ 5图</span></a>
       <div class="card-body"><div class="card-game-line">${game ? `<span class="mini-game-logo ${game.brand ? "is-brand" : ""}"><img src="${game.icon}" alt=""></span>` : ""}<span><strong>${GM.escape(product.gameName)}</strong><small>${GM.escape(product.platform)} · ${GM.escape(product.server)}</small></span></div><h3>${GM.escape(product.title)}</h3><p class="card-subtitle">${GM.escape(product.subtitle)}</p><div class="price-row"><div class="price"><strong>${GM.money(product.price)}</strong><del>${product.originalPrice ? GM.money(product.originalPrice) : ""}</del></div><a class="text-link" href="./${product.productType === "account" ? "accounts" : "recharge"}.html?game=${encodeURIComponent(product.gameName)}">查看商品 →</a></div></div>
     </article>`;
   }

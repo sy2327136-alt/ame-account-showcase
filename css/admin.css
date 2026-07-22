@@ -35,7 +35,9 @@ textarea.admin-input { min-height:100px; resize:vertical; }
 .panel-head h2 { margin:0; font-size:18px; }
 .admin-search { max-width:260px; }
 .admin-table-wrap { overflow:auto; }
-.admin-table { width:100%; border-collapse:collapse; min-width:650px; }
+.admin-table { width:100%; border-collapse:collapse; min-width:780px; }
+.source-admin-link { display:block; color:#f0c66e; font-size:12px; text-decoration:underline; text-underline-offset:3px; }
+.source-admin-price { display:block; margin-top:3px; color:var(--muted); font-size:10px; }
 .admin-table th { padding:10px; color:var(--muted); border-bottom:1px solid var(--line); text-align:left; font-size:11px; }
 .admin-table td { padding:12px 10px; border-bottom:1px solid var(--line); vertical-align:middle; }
 .admin-table tr:last-child td { border-bottom:0; }
