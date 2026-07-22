@@ -1,5 +1,5 @@
 window.APP_CONFIG = {
-  repository: "",
+  repository: "sy2327136-alt/ame-account-showcase",
   branch: "main",
   dataPath: "data/products.json",
   assetRoot: "assets/products",
