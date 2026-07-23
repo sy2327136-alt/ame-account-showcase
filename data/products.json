@@ -1,11 +1,14 @@
 {
   "version": 3,
-  "updatedAt": "2026-07-22T21:35:14.385Z",
+  "updatedAt": "2026-07-23T03:23:36.306Z",
   "pricingNote": "精选服务参考价按公开在售参考价上浮30%，包含信息筛选、资料整理与咨询服务；最终库存、实名和换绑条件以客服实时复核为准。",
   "sourceAudit": {
     "visibleOnFrontend": false,
     "verifiedRule": "详情页未出现商品已下架或商品已出售",
-    "selectedCount": 200
+    "selectedCount": 200,
+    "imageRule": "仅展示详情页公开的真实商品截图；不再生成模板占位图",
+    "productsWithImages": 8,
+    "imageCount": 184
   },
   "products": [
     {
@@ -26,8 +29,38 @@
         "荣耀典藏3",
         "可二次实名"
       ],
-      "coverImage": "./assets/hero-duo.webp",
-      "images": [],
+      "coverImage": "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_aWsfYyuW_1782113305615.png?x-oss-process=style/titleImg",
+      "images": [
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_aWsfYyuW_1782113305615.png?x-oss-process=style/titleImg",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_hSzBXhwH_1782113307026.jpg?group=g1&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_CHKYVNea_1782113308283.jpg?group=g1&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_pPrYnQSk_1782113309167.jpg?group=g1&index=3&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_GUahlZev_1782113309838.jpg?group=g1&index=4&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_fnpcphfm_1782113310397.jpg?group=g1&index=5&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_NwRBRGlh_1782113311168.jpg?group=g1&index=6&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_zsOMNJHR_1782113311851.jpg?group=g1&index=7&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_AGLnbTgW_1782113312389.jpg?group=g1&index=8&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_dnVvaxSl_1782113312781.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_tsSgVQll_1782113313460.jpg?group=g2&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_FxHebyfO_1782113314058.jpg?group=g2&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_sMMnSqHU_1782113314481.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_AuYzFlrq_1782113315019.jpg?group=g3&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_xtvsivRB_1782113315402.jpg?group=g3&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_TkesyzYc_1782113315729.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_zXlCGXzh_1782113315855.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_dKstLBbR_1782113316015.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_gmLipMlN_1782113312607.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_eQrSkszI_1782113210856.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_xDACqieH_1782113208531.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_cYgJELyC_1782113212985.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_ktaMDeYf_1782113316936.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_XGNLwhEe_1782113317122.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_wAZuLrzH_1782113316560.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_YpRzXprN_1782113316730.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_RRUlzmpk_1782113316375.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_fMythroq_1782113316204.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260622/tools_RrPWoToP_1782113204582.png?x-oss-process=style/jpg90"
+      ],
       "description": "已从本期公开在售信息中筛选，重点配置为皮肤数量405、荣耀典藏3、套装22、英雄130。下单前请联系客服再次确认库存、实名与换绑条件。",
       "specs": {
         "配置亮点 1": "皮肤数量405",
@@ -43,11 +76,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/C623F2/6",
       "sourcePrice": 89900,
       "sourceTitle": "贵族8差100贵族九 【省标4】 贵族7 荣耀典藏3 星元皮肤3 传说皮肤17 星元套装22 史诗皮肤111 皮肤数量405 天幕1 英雄130 至尊星耀 总场次22000，详情看图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.386Z",
+      "sourceCheckedAt": "2026-07-23T03:23:28.667Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 1000
+      "sortOrder": 1000,
+      "imageCount": 29
     },
     {
       "id": "acc-8-F2LF8V",
@@ -78,11 +112,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/F2LF8V/6",
       "sourcePrice": 70000,
       "sourceTitle": "【10粉装-13粉枪-0载具-2珍稀飞行器-232套装-317枪皮-101局内动作】传奇收藏家：76级 热力值：98272 历史最高段位：超级王牌11星 王牌印记：16 传奇印记：1 卓越印记：2 Lv:68",
-      "sourceCheckedAt": "2026-07-22T21:35:14.386Z",
+      "sourceCheckedAt": "2026-07-23T03:23:28.457Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 999
+      "sortOrder": 999,
+      "imageCount": 0
     },
     {
       "id": "acc-391-SA2V88Q",
@@ -101,8 +136,23 @@
         "总资产49M",
         "可二次实名"
       ],
-      "coverImage": "./assets/hero-duo.webp",
-      "images": [],
+      "coverImage": "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_CKtKRxdV_1783484062123.png?x-oss-process=style/titleImg",
+      "images": [
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_CKtKRxdV_1783484062123.png?x-oss-process=style/titleImg",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_JmsRofCu_1783484062401.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_UKgwJton_1783484062643.jpg?group=g1&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_pcOjPbKz_1783484062893.jpg?group=g1&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_QUxEBtbQ_1783484063223.jpg?group=g1&index=3&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_vltpjqeg_1783484063530.jpg?group=g1&index=4&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_TZlwfiFv_1783484063687.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_xpAYEIKO_1783484063930.jpg?group=g2&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_jTIMLopw_1783484064204.jpg?group=g2&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_eBpPWtom_1783484064491.jpg?group=g2&index=3&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_EVaGmyou_1783484064599.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_oLHswjQn_1783484064739.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_VvEHfleO_1783484065001.jpg?group=g3&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260708/tools_eDEvEGIV_1783484065256.jpg?group=g3&index=2&x-oss-process=style/jpg90"
+      ],
       "description": "已从本期公开在售信息中筛选，重点配置为总资产49M。下单前请联系客服再次确认库存、实名与换绑条件。",
       "specs": {
         "配置亮点 1": "总资产49M",
@@ -115,11 +165,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/SA2V88Q/6",
       "sourcePrice": 115000,
       "sourceTitle": "瓦奇点ak蝴蝶盖亚ak光荣ak一赛季通行 总资产49M，哈夫币1522w，近战1 枪皮数量212，战场等级50上等兵, 行动等级60钻石，威龙-铁面判官牧羊人-街头之王，安全箱等时效性道具请以游戏内数据为准，详情请看图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.386Z",
+      "sourceCheckedAt": "2026-07-23T03:23:29.901Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 998
+      "sortOrder": 998,
+      "imageCount": 14
     },
     {
       "id": "acc-231-PW245TT",
@@ -156,11 +207,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/PW245TT/6",
       "sourcePrice": 160000,
       "sourceTitle": "连体手瓦王者荣耀和平精英 Lv78 ，皮肤总价值13110，黄金II，总皮肤20，刀皮2枪皮18(传奇3卓越2)，具体详情看图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-23T03:23:30.092Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 997
+      "sortOrder": 997,
+      "imageCount": 0
     },
     {
       "id": "acc-3000-LKWG2MW",
@@ -179,8 +231,39 @@
         "套装40",
         "可二次实名"
       ],
-      "coverImage": "./assets/hero-duo.webp",
-      "images": [],
+      "coverImage": "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_hynwYpaa_1783169385382.png?x-oss-process=style/jpg90",
+      "images": [
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_hynwYpaa_1783169385382.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_TFPxcHaB_1783169385008.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_uIeJTIED_1783169385138.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_qUcvbRdW_1783169386065.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_qqCaEwaA_1783169383524.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_BRRIaUSg_1783169386993.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_zsTrsqqI_1783169386747.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_IywjUTeN_1783169384842.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_NkiRsYVb_1783169386809.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_lruGTZhd_1783169385508.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_XaVxFpJR_1783169385872.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_dZubUDsQ_1783169385073.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_qADbUPUi_1783169383590.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_VZWawKcr_1783169385299.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_BHJiOqzF_1783169386127.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_hRSuykqq_1783169387122.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_uYmQUJLX_1783169385937.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_bXCIOQzw_1783169383255.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_YeAsHlIT_1783169385633.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_WrIuhSBq_1783169384505.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_mtaizqgv_1783169383790.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_NrlAHkya_1783169385203.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_bhsxDKZt_1783169384105.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_YukKjNxZ_1783169386871.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_BBsDVFkx_1783169385794.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_myYLOwWP_1783169384265.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_cVHiwPOi_1783169386379.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_aijAoGku_1783169384946.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_qkpORorK_1783169385570.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/LKWG1/20260704/tools_MIHFnnTW_1783169386684.png?x-oss-process=style/jpg90"
+      ],
       "description": "已从本期公开在售信息中筛选，重点配置为套装40。下单前请联系客服再次确认库存、实名与换绑条件。",
       "specs": {
         "配置亮点 1": "套装40",
@@ -193,11 +276,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/LKWG2MW/6",
       "sourcePrice": 185000,
       "sourceTitle": "极品开服全勤豹子号333344，生生世世 精灵魔法师66级，图鉴总数量：375，狂欢棱镜球2，织梦棱镜球2，棱镜球21，国王球78，高级球302，黑白炫彩精灵1，S2炫彩精灵7，S1炫彩精灵4，异色炫彩精灵34，异色精灵81，炫彩精灵88，精灵果实28，爱分享精灵20，同乘精灵31，洛克贝31895w，洛克钻168，许愿星212，华丽徽章2，外观套装40，闪耀契约礼券学院月度补给，详情见图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-23T03:23:31.378Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 996
+      "sortOrder": 996,
+      "imageCount": 30
     },
     {
       "id": "acc-286-NYKCH0",
@@ -228,11 +312,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/NYKCH0/6",
       "sourcePrice": 520000,
       "sourceTitle": "7.34 素问【卧看千山】【已用天赏石51】【未用天赏石1】【转盘外观4】天霓染15, 天赏发型5, 副本外观2, 馆藏8级, 灵韵2, 赛年内功3, 24国色, 393405衣品, 239800国色值, 未用天赏石, 324套时装, 小镇等级8, 详情见图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-23T03:23:31.540Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 995
+      "sortOrder": 995,
+      "imageCount": 0
     },
     {
       "id": "acc-1355-CRWY0R",
@@ -252,8 +337,14 @@
         "星耀0",
         "实名条件需核验"
       ],
-      "coverImage": "./assets/hero-duo.webp",
-      "images": [],
+      "coverImage": "https://pzdsoss.pzds.com/c/2/goods//meta/20260706/tools_dyeeMVIr_1783318605788.png?x-oss-process=style/titleImg",
+      "images": [
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260706/tools_dyeeMVIr_1783318605788.png?x-oss-process=style/titleImg",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260706/tools_rykJhJES_1783318606439.jpg?group=g1&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260706/tools_yahLvnmH_1783318606799.jpg?group=g1&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260706/tools_fMffyskB_1783318607216.jpg?group=g1&index=3&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260706/tools_NZGgDMjA_1783318607536.jpg?group=g1&index=4&x-oss-process=style/jpg90"
+      ],
       "description": "已从本期公开在售信息中筛选，重点配置为幻梦1、星耀0、耀世6、联动2。下单前请联系客服再次确认库存、实名与换绑条件。",
       "specs": {
         "配置亮点 1": "幻梦1",
@@ -271,11 +362,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/CRWY0R/6",
       "sourcePrice": 160000,
       "sourceTitle": "幻梦1星耀0耀世6联动2典藏38，道具皮68，巫铃儿-镜生遗梦,逍遥-剑仙,零-渡鸦公爵,逍遥-莲华渡,薇薇安-圣光之谕,小黄-遗失的童话,巫铃儿-镜花辞,零-狡,逍遥-菠萝吹雪，详情看图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-23T03:23:32.801Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 994
+      "sortOrder": 994,
+      "imageCount": 5
     },
     {
       "id": "acc-359-YY06B3",
@@ -295,8 +387,39 @@
         "套装11",
         "实名条件需核验"
       ],
-      "coverImage": "./assets/hero-duo.webp",
-      "images": [],
+      "coverImage": "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_LtRYkcMA_1784267559528.jpg?x-oss-process=style/jpg90",
+      "images": [
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_LtRYkcMA_1784267559528.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_nYMawUco_1784267555415.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_xjkshoOd_1784267561019.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_LcjrVDOc_1784267557823.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_hKOaaCFm_1784267561152.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_KlPTIccT_1784267555055.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_erJqAQxN_1784267562117.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_eeOGaQyP_1784267561946.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_dhWgAFFn_1784267556148.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_BCMLICAm_1784267557898.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_QiOFckIG_1784267555194.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_cuSULaSy_1784267555334.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_CnkXlVlp_1784267490267.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_CkQPWcWl_1784267489182.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_clTETADo_1784267590417.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_pstSIuPL_1784267490335.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_PPYiLvcK_1784267590483.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_PsidjVGc_1784267590132.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_iMYVRVct_1784267488989.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_mTzYVBUJ_1784267488912.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_FSnyjNCP_1784267556922.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_IVoQNodz_1784267556822.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_ftBtHOji_1784267590782.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_NCXgjmBz_1784267557068.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_XqYsLUOf_1784267608974.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_FpCOtMPm_1784267557001.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_DahLITei_1784267609052.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_FXzdMOKi_1784267556678.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_xDNMbdKs_1784267561085.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods/meta/20260717/tools_zDSpyjOM_1784267557498.jpg?x-oss-process=style/jpg90"
+      ],
       "description": "已从本期公开在售信息中筛选，重点配置为载具9、套装11。下单前请联系客服再次确认库存、实名与换绑条件。",
       "specs": {
         "配置亮点 1": "载具9",
@@ -310,11 +433,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/YY06B3/6",
       "sourcePrice": 1350000,
       "sourceTitle": "【已用八音窍27（不含染色）】, 3音玉奇术特效, 等级100, 风华值164362, 武林造诣4.709鹅, 龙腾岁宴鸣鹿寻春, 重铸2, 套装11金66紫, 载具9, 清河6级, 开封6级, 开封皇宫5级, 河西6级, 不见山6级, 青州3级, 江南2级, 详情见图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-23T03:23:33.117Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 993
+      "sortOrder": 993,
+      "imageCount": 30
     },
     {
       "id": "acc-1546-YE2B0Q",
@@ -332,8 +456,39 @@
       "tags": [
         "实名条件需核验"
       ],
-      "coverImage": "./assets/hero-duo.webp",
-      "images": [],
+      "coverImage": "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_EdJuKxMv_1784719624198.jpg?x-oss-process=style/titleImg",
+      "images": [
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_EdJuKxMv_1784719624198.jpg?x-oss-process=style/titleImg",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_HdIOzTVq_1784719624390.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_vLEOvMcB_1784719624502.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_HrorvQTW_1784719624626.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_ebHvsLxy_1784719624779.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_RYvxwRao_1784719624913.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_SaBKxtsw_1784719625008.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_FyMpoZfb_1784719625068.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_DjMcqQpS_1784719625163.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_xfrgLEWX_1784719625423.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_PposwQkX_1784719625738.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_BZjGJSBN_1784719626148.jpg?group=g1&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_ZFPSOUKB_1784719626605.jpg?group=g1&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_IMiVHlFU_1784719626866.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_hREueadX_1784719627126.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_qvAUmIZo_1784719627250.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_EFVNnZdX_1784719627422.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_XXNqVoBq_1784719627823.jpg?group=g2&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_oOCYVXTy_1784719628118.jpg?group=g2&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_HliGGpDR_1784719628388.jpg?group=g3&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_QGCujGCJ_1784719628740.jpg?group=g3&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_NNmsBQoY_1784719628977.jpg?group=g4&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_sbgYdiRQ_1784719629328.jpg?group=g4&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_RwFCejkv_1784719629676.jpg?group=g5&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_lzGccALl_1784719630202.jpg?group=g5&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_PwAYFEzc_1784719630473.jpg?group=g6&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_cXcedsFz_1784719630815.jpg?group=g6&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_iFfFCEzN_1784719631138.jpg?group=g7&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_ITZGPwdE_1784719631467.jpg?group=g7&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_NdWoRprb_1784719631764.jpg?group=g8&index=1&x-oss-process=style/jpg90"
+      ],
       "description": "已从本期公开在售信息中筛选，重点配置为资料完整、价位合理。下单前请联系客服再次确认库存、实名与换绑条件。",
       "specs": {
         "账号平台": "官服",
@@ -345,11 +500,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/YE2B0Q/6",
       "sourcePrice": 18800,
       "sourceTitle": "1000w方斯 等级51，大亨等级38，金数35，S角色10，S弧盘20，环石11495，异晶1068，质实骰子2，4觉小吱，1觉早雾，0觉九原，0觉哈索尔，0觉白藏，0时装，详情附图【道具仅为截图时所拥有内容，具体以实际游戏内为准】",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-23T03:23:34.244Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 992
+      "sortOrder": 992,
+      "imageCount": 30
     },
     {
       "id": "acc-303-MC1SD8",
@@ -367,8 +523,39 @@
       "tags": [
         "实名条件需核验"
       ],
-      "coverImage": "./assets/hero-duo.webp",
-      "images": [],
+      "coverImage": "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_yRBIIfrD_1784093240636.jpg?x-oss-process=style/titleImg",
+      "images": [
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_yRBIIfrD_1784093240636.jpg?x-oss-process=style/titleImg",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_gUBKVihg_1784093241288.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_bNpIPfUT_1784093241397.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_SOwOMOUx_1784093241479.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_MjlEItnT_1784093241827.jpg?group=g1&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_DmeWwnqy_1784093242507.jpg?group=g1&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_iiWWwPsd_1784093242605.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_BkxkaiEx_1784093242755.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_XhbUbYYR_1784093242915.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_QgKveTbM_1784093243103.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_FQBBkeHm_1784093243265.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_hdmLOazN_1784093244183.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_opqYFqPe_1784093244368.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_BmHxQqeR_1784093244519.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_EPqOFmMf_1784093244669.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_kBzhCzDW_1784093244812.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_LdLOrTvS_1784093244974.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_KUocczTH_1784093245135.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_OcsBdOLB_1784093245277.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_tAsjQRfX_1784093245428.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_whlVNOpF_1784093245575.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_ryaciGtz_1784093245723.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_ILBNNyfs_1784093246043.jpg?group=g2&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_kGdhZLoW_1784093246339.jpg?group=g2&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_yOJyiqrQ_1784093247271.jpg?group=g3&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_CAXARYNj_1784093248148.jpg?group=g3&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_HtVrkYNo_1784093248391.jpg?group=g4&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_KFpcXmlF_1784093249235.jpg?group=g4&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_vEkXfXdP_1784093249503.jpg?group=g5&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260715/tools_gwezrUuz_1784093250281.jpg?group=g5&index=2&x-oss-process=style/jpg90"
+      ],
       "description": "已从本期公开在售信息中筛选，重点配置为资料完整、价位合理。下单前请联系客服再次确认库存、实名与换绑条件。",
       "specs": {
         "账号平台": "官服",
@@ -380,11 +567,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/MC1SD8/6",
       "sourcePrice": 180000,
       "sourceTitle": "80级，99黄，27金角色，20金武器，2皮肤，20浮金波纹，184月相，数据坞等级30，233星声，满命千咲，满命守岸人，满命今汐，满命维里奈，满命安可，其它详情看图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-23T03:23:34.537Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 991
+      "sortOrder": 991,
+      "imageCount": 30
     },
     {
       "id": "acc-1-TD67J2",
@@ -415,11 +603,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/TD67J2/6",
       "sourcePrice": 150000,
       "sourceTitle": "【再战十年】14.75天香，魅力13878，3首饰镇派(1级戒指1级戒指1级手镯)，1特效，镇如五岳9重天人合一25重势如破竹13重威如天狱20重怒如山火33重动如雷震9重，风华朱莱潜藏武器天地同和，萤雪绣湘君捉影红绡缚玉玉漫漫春日宴镜中人羲和游园会遗忘咒语等26套商城时装32.5W天赏积分，锦现兔子健将发，冰凌萤雪发，寒绯樱游园会遗忘咒语发，云叶青春不散朱莱发，洛水天地同和发，裂宇流星凤舞九天炼武气劲炼武根骨罗喉诀，全身琢磨平均35，琳琅瑰玉2，冶玲珑焰11，陨焰之石碎片9，珍藏兑换券484，金色神兵质料自选礼1，醍醐之悟501，灵运币172，离玉堂韩莹莹金色碎片自选60，曲无忆笑道人金色碎片自选102，洛水2，彩纫之匣240，随心染52，焕彩之砂12，周享兑换券176，活跃币410，梅蕊之卷26（白公子5天后到期）",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-23T03:23:35.876Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 990
+      "sortOrder": 990,
+      "imageCount": 0
     },
     {
       "id": "acc-1957-DDV0LQ9",
@@ -437,8 +626,25 @@
       "tags": [
         "可二次实名"
       ],
-      "coverImage": "./assets/hero-duo.webp",
-      "images": [],
+      "coverImage": "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_DjLGZNOL_1784517948226.png?x-oss-process=style/titleImg",
+      "images": [
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_DjLGZNOL_1784517948226.png?x-oss-process=style/titleImg",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_juVFHaDS_1784517948637.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_bGQDiEtw_1784517948833.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_XJdmkwUl_1784517948919.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_DAFqtgQx_1784517949008.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_NGwqqDrH_1784517949080.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_shTCBBSi_1784517949164.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_RaNrFcMM_1784517949313.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_ZXjhcHmt_1784517949589.jpg?group=g1&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_esKsgwjH_1784517949814.jpg?group=g1&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_LSLCeYms_1784517949962.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_lgwSzYRD_1784517950185.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_BmFjcmLq_1784517950298.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_GaZijKQu_1784517950437.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_SSROYCJc_1784517950524.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260720/tools_ahVliEsM_1784517950637.jpg?x-oss-process=style/jpg90"
+      ],
       "description": "已从本期公开在售信息中筛选，重点配置为资料完整、价位合理。下单前请联系客服再次确认库存、实名与换绑条件。",
       "specs": {
         "账号平台": "官服",
@@ -450,11 +656,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/DDV0LQ9/6",
       "sourcePrice": 435000,
       "sourceTitle": "lv63，6典藏，2至臻，AI精灵·紫影，专业刷锅小猪妖，AI精灵·蔚蓝，翡翠墨镜，AI精灵·鎏光，正儿八经蛤蟆精，透明配角黄鼠狼，77金枪，27金刀，15传说角色，精绝女王，幽魂骑士，死神猎手-幽航猎影，精绝兽神-精绝冰骸，炼狱蝎王-粉墨重华，火神炎帝-醉梦之城，玄凌飞刃-幻影藏锋，血怨-噬魂，武装斧头x2，猪猪侠捏捏乐，冰点双锋，鬼影长枪-冰砺千年，葫芦x2，沙暴冷锋x2，血怨，蛇神之剑x2，樱之殇x4，木葫芦，鬼影长枪x3，死亡之拥x2，钢铁之握，死神镰刀，蛇神之矛x3，钢铁轰鸣x2，战争矩阵x2，冥河之矛，夜影之逝-降妖除魔，暗夜之殇-桃瑞，猪猪榴弹发射器，韶光樱影，裁决之眼，裁决之眼-青空橙影，炼狱蝎王-光珀，能源之影-双重冲击，哈士奇好友-全息再现，战争矩阵-暮天流霞，精绝兽神-狂野金魂，暗夜之殇-炽焰，能源之影，苔色暴风-沙漠涂装，雷霆之影，纯白至上，振弦x3，黑金仲裁者-审判重锤，维和者-攀登，乘风快递-航迹，胜利誓约-绿潮，雷霆999，生命线，浪里白条x2，生命线-蝶与寰宇，黑金仲裁者，精绝兽神-女王权柄，玄凌飞刃，飓风之龙-深渊狂潮，雷霆之影-霓虹涂鸦，收割者-金炼，超级复合弓x2，幽冥毒皇，收割者-沙漠涂装，心有凌兮，暗夜之殇，乘风快递，往日速递x2，收割者x2，生命线-冬日耀阳，苔色暴风x3，春雷震，黄金Z型步枪，战争矩阵-黄金城，幽冥毒皇-幽绿之刃，夜影之逝，超级复合弓-沙漠涂装x2，火神炎帝，火神炎帝-探索颂歌，死神猎手，鬼铜蚀，生命线-青空橙影，黄沙风暴-红铁印记，刺隐，炼狱蝎王，雷霆之影-金炼，维和者x2，黄沙风暴，鬼铜蚀-逆火而上，死神猎手-眩紫狂潮，飓风之龙，维和者-金炼，高级减速陷阱，高级自修复磁暴塔，高级天启，高级防空导弹，高级净水大炮，高级泡泡陷阱，高级修理站，高级天网，高级歼灭者，高级激光发射器，高级破坏者，高级战防炮，高级激光箭，其他详情看图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-23T03:23:35.956Z",
       "status": "active",
       "featured": true,
       "sales": 0,
-      "sortOrder": 989
+      "sortOrder": 989,
+      "imageCount": 16
     },
     {
       "id": "acc-7-PGH3QS4",
