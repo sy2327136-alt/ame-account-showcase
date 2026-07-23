@@ -25,11 +25,13 @@
 
   function card(product, favorites) {
     const game = gameInfo(product.gameName);
-    const cover = window.ProductVisuals?.cover(product) || product.coverImage;
+    const images = (product.images || []).filter(Boolean);
+    const cover = images[0] || product.coverImage;
+    const imageCount = images.length;
     const tags = (product.tags || []).slice(0, 2).map((tag) => `<span class="tag">${GM.escape(tag)}</span>`).join("");
     return `<article class="product-card">
       <button class="favorite ${favorites.includes(product.id) ? "is-on" : ""}" data-favorite="${GM.escape(product.id)}" aria-label="收藏商品">♥</button>
-      <button class="card-image" data-detail="${GM.escape(product.id)}"><img src="${GM.escape(cover)}" alt="${GM.escape(product.title)}" loading="lazy">${product.badge ? `<span class="card-badge">${GM.escape(product.badge)}</span>` : ""}<span class="photo-count">▧ 5图</span></button>
+      <button class="card-image" data-detail="${GM.escape(product.id)}"><img src="${GM.escape(cover)}" alt="${GM.escape(product.title)}" loading="lazy" referrerpolicy="no-referrer">${product.badge ? `<span class="card-badge">${GM.escape(product.badge)}</span>` : ""}${imageCount ? `<span class="photo-count">▧ ${imageCount}图</span>` : '<span class="photo-count">暂无实拍</span>'}</button>
       <div class="card-body">
         <div class="card-game-line">${game ? `<span class="mini-game-logo ${game.brand ? "is-brand" : ""}"><img src="${game.icon}" alt=""></span>` : ""}<span><strong>${GM.escape(product.gameName)}</strong><small>${GM.escape(product.platform)} · ${GM.escape(product.server)}</small></span></div>
         <button class="card-title" data-detail="${GM.escape(product.id)}">${GM.escape(product.title)}</button>
@@ -98,13 +100,13 @@
   function showDetail(product) {
     if (!product) return;
     const game = gameInfo(product.gameName);
-    const uploaded = (product.images || []).filter(Boolean);
-    const generated = window.ProductVisuals?.slides(product) || [];
-    const images = [...uploaded, ...generated].filter((src, index, list) => src && list.indexOf(src) === index).slice(0, 30);
+    const images = (product.images || []).filter((src, index, list) => src && list.indexOf(src) === index).slice(0, 30);
+    const fallback = product.coverImage ? [product.coverImage] : ["./assets/hero-duo.webp"];
+    const galleryImages = images.length ? images : fallback;
     const specs = Object.entries(product.specs || {}).map(([label, value]) => `<div class="spec"><span>${GM.escape(label)}</span><strong>${GM.escape(value)}</strong></div>`).join("");
     modal.innerHTML = `<div class="modal-card" role="dialog" aria-modal="true"><button class="modal-close" data-close-modal aria-label="关闭">✕</button><div class="modal-grid">
-      <div class="gallery"><div class="gallery-main"><img data-main-image src="${GM.escape(images[0])}" alt="${GM.escape(product.title)}"></div><div class="thumbs">${images.map((src, index) => `<button class="thumb ${index === 0 ? "is-active" : ""}" data-thumb="${GM.escape(src)}"><img src="${GM.escape(src)}" alt="商品图片 ${index + 1}"></button>`).join("")}</div></div>
-      <div class="detail"><div class="detail-game">${game ? `<span class="mini-game-logo ${game.brand ? "is-brand" : ""}"><img src="${game.icon}" alt=""></span>` : ""}<span><b>${GM.escape(product.gameName)}</b><small>商品编号 ${GM.escape(product.id)}</small></span></div><h2>${GM.escape(product.title)}</h2><p class="lead">${GM.escape(product.subtitle)}</p><div class="detail-price"><small>精选服务参考价</small>${GM.money(product.price)}</div><div class="protection-row"><span>✓ 资料重点整理</span><span>✓ 五张独立展示图</span><span>✓ 客服实时复核</span></div><p class="detail-description">${GM.escape(product.description)}</p><h3 class="detail-section-title">商品参数</h3><div class="spec-grid">${specs}</div><div class="contact-note"><b>重要说明</b><span>展示图由账号公开参数制作；如后台另有实拍图会全部保留。库存、实名、换绑和最终配置需在下单前由客服再次核验。</span></div><div class="detail-actions"><button class="btn" data-copy-wechat>复制客服微信 GF999314</button><button class="btn ghost" data-modal-favorite="${GM.escape(product.id)}">收藏商品</button></div></div>
+      <div class="gallery"><div class="gallery-main"><img data-main-image src="${GM.escape(galleryImages[0])}" alt="${GM.escape(product.title)}" referrerpolicy="no-referrer"></div><div class="thumbs">${galleryImages.map((src, index) => `<button class="thumb ${index === 0 ? "is-active" : ""}" data-thumb="${GM.escape(src)}"><img src="${GM.escape(src)}" alt="商品图片 ${index + 1}" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</div>${images.length ? `<p class="gallery-count">共 ${images.length} 张真实商品图</p>` : '<p class="gallery-count">该商品暂未取得真实截图，请联系客服核验</p>'}</div>
+      <div class="detail"><div class="detail-game">${game ? `<span class="mini-game-logo ${game.brand ? "is-brand" : ""}"><img src="${game.icon}" alt=""></span>` : ""}<span><b>${GM.escape(product.gameName)}</b><small>商品编号 ${GM.escape(product.id)}</small></span></div><h2>${GM.escape(product.title)}</h2><p class="lead">${GM.escape(product.subtitle)}</p><div class="detail-price"><small>精选服务参考价</small>${GM.money(product.price)}</div><div class="protection-row"><span>✓ 资料重点整理</span><span>✓ 真实商品多图</span><span>✓ 客服实时复核</span></div><p class="detail-description">${GM.escape(product.description)}</p><h3 class="detail-section-title">商品参数</h3><div class="spec-grid">${specs}</div><div class="contact-note"><b>重要说明</b><span>详情图片为该账号公开商品截图，已按商品逐一匹配。库存、实名、换绑和最终配置需在下单前由客服再次核验。</span></div><div class="detail-actions"><button class="btn" data-copy-wechat>复制客服微信 GF999314</button><button class="btn ghost" data-modal-favorite="${GM.escape(product.id)}">收藏商品</button></div></div>
     </div></div>`;
     modal.classList.add("is-open");
     document.body.style.overflow = "hidden";

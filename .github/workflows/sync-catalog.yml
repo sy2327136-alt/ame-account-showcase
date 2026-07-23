@@ -2,6 +2,15 @@ name: Sync verified account catalog
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "同步模式"
+        required: true
+        default: "images"
+        type: choice
+        options:
+          - images
+          - inventory
   push:
     branches: [main]
     paths:
@@ -26,7 +35,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Fetch and verify 200 live accounts
+      - name: Fill real product images
+        if: github.event_name != 'workflow_dispatch' || inputs.mode == 'images'
+        run: node scripts/sync-market.mjs --hydrate-existing
+      - name: Refresh inventory and real product images
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'inventory'
         run: node scripts/sync-market.mjs
       - name: Publish refreshed catalog
         run: |

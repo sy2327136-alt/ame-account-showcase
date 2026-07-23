@@ -10,6 +10,7 @@ const games = [
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const strip = (value) => String(value || "").replace(/<[^>]*>/g, " ").replace(/&nbsp;|&#160;/g, " ").replace(/&quot;/g, '"').replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
 const clean = (value) => strip(value).replace(/[，。；;]+$/g, "");
+const dataUrl = new URL("../data/products.json", import.meta.url);
 
 async function fetchText(url, attempts = 3) {
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
@@ -18,8 +19,11 @@ async function fetchText(url, attempts = 3) {
     try {
       const response = await fetch(url, { headers: { "user-agent": "Mozilla/5.0 GF-Catalog-Sync/1.0" }, signal: controller.signal });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return await response.text();
+      const html = await response.text();
+      if (/aliyun_waf_aa|访问验证|Access Verification/i.test(html)) throw new Error("ACCESS_VERIFICATION");
+      return html;
     } catch (error) {
+      if (error.message === "ACCESS_VERIFICATION") throw error;
       if (attempt === attempts) throw error;
       await sleep(700 * attempt);
     } finally { clearTimeout(timer); }
@@ -38,6 +42,66 @@ async function mapLimit(items, limit, worker) {
   }
   await Promise.all(Array.from({ length: Math.min(limit, items.length) }, run));
   return result;
+}
+
+function parseDetailImages(html) {
+  const decoded = String(html || "").replace(/\\u002F/g, "/").replace(/\\u0026/g, "&");
+  const matches = [...decoded.matchAll(/https:\/\/pzdsoss\.pzds\.com\/c\/2\/goods\/{1,2}meta\/[^"'<>\\\s)]+?\.(?:jpe?g|png|webp)(?:\?[^"'<>\\\s)]*)?/gi)]
+    .map((match) => match[0].replace(/&amp;/g, "&"));
+  const seen = new Set();
+  const images = [];
+  for (const src of matches) {
+    const key = src.split("?")[0];
+    if (seen.has(key)) continue;
+    seen.add(key);
+    images.push(src.includes("x-oss-process") ? src : `${src}${src.includes("?") ? "&" : "?"}x-oss-process=style/jpg90`);
+    if (images.length === 30) break;
+  }
+  return images;
+}
+
+async function hydrateExistingProducts() {
+  const data = JSON.parse(await fs.readFile(dataUrl, "utf8"));
+  const pending = data.products.filter((product) => !(product.images || []).length);
+  let accessBlocked = false;
+  console.log(`现有 ${data.products.length} 个商品，${pending.length} 个等待补齐真实详情图…`);
+  const updates = await mapLimit(pending, 2, async (product, index) => {
+    if (accessBlocked) return product;
+    try {
+      const html = await fetchText(product.sourceUrl, 2);
+      if (/商品已下架|商品已出售/.test(html)) return { ...product, status: "inactive", images: [], imageCount: 0 };
+      const sourceImages = parseDetailImages(html);
+      const manuallyUploaded = (product.images || []).filter((src) => !/^https:\/\/pzdsoss\.pzds\.com\//i.test(src));
+      const images = [...new Set([...manuallyUploaded, ...sourceImages])].slice(0, 30);
+      await sleep(900);
+      if ((index + 1) % 10 === 0) console.log(`图片进度 ${index + 1}/${pending.length}`);
+      return {
+        ...product,
+        coverImage: images[0] || product.coverImage,
+        images,
+        imageCount: images.length,
+        sourceCheckedAt: new Date().toISOString()
+      };
+    } catch (error) {
+      if (error.message === "ACCESS_VERIFICATION") {
+        accessBlocked = true;
+        console.log("来源站点要求访问验证，本轮停止请求并保留现有数据，等待下次自动补图。");
+      }
+      return product;
+    }
+  });
+  const updatesById = new Map(updates.map((product) => [product.id, product]));
+  const hydrated = data.products.map((product) => updatesById.get(product.id) || product);
+  data.updatedAt = new Date().toISOString();
+  data.sourceAudit = {
+    ...data.sourceAudit,
+    imageRule: "仅展示详情页公开的真实商品截图；不再生成模板占位图",
+    productsWithImages: hydrated.filter((product) => product.images.length).length,
+    imageCount: hydrated.reduce((sum, product) => sum + product.images.length, 0)
+  };
+  data.products = hydrated;
+  await fs.writeFile(dataUrl, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  console.log(`图片补齐完成：${data.sourceAudit.productsWithImages} 个商品，共 ${data.sourceAudit.imageCount} 张真实截图。`);
 }
 
 function parseList(html, game) {
@@ -97,6 +161,7 @@ function buildProduct(item, order) {
   keyPoints.forEach((value, index) => { specs[`配置亮点 ${index + 1}`] = value; });
   specs["账号平台"] = platform;
   specs["实名条件"] = realName;
+  const images = (item.images || []).slice(0, 30);
   return {
     id: `acc-${item.sourceGameId}-${item.code}`,
     productType: "account",
@@ -111,8 +176,9 @@ function buildProduct(item, order) {
     region: "国服",
     badge,
     tags: [...keyPoints.slice(0, 2), realName].filter(Boolean),
-    coverImage: "./assets/hero-duo.webp",
-    images: [],
+    coverImage: images[0] || "./assets/hero-duo.webp",
+    images,
+    imageCount: images.length,
     description: `已从本期公开在售信息中筛选，重点配置为${keyPoints.slice(0, 4).join("、") || "资料完整、价位合理"}。下单前请联系客服再次确认库存、实名与换绑条件。`,
     specs,
     sourceName: "盼之公开在售",
@@ -127,6 +193,11 @@ function buildProduct(item, order) {
     sales: 0,
     sortOrder: 1000 - order
   };
+}
+
+if (process.argv.includes("--hydrate-existing")) {
+  await hydrateExistingProducts();
+  process.exit(0);
 }
 
 console.log("开始抓取 12 个热门游戏的实时在售列表…");
@@ -155,7 +226,7 @@ const verified = (await mapLimit(balanced, 10, async (item, index) => {
   const html = await fetchText(`https://www.pzds.com/goodsDetails/${item.code}/6`, 2);
   const available = !/商品已下架|商品已出售/.test(html);
   if ((index + 1) % 25 === 0) console.log(`核验进度 ${index + 1}/${balanced.length}`);
-  return available ? item : null;
+  return available ? { ...item, images: parseDetailImages(html) } : null;
 })).filter(Boolean);
 
 const selected = [];
@@ -176,9 +247,16 @@ const output = {
   version: 3,
   updatedAt: new Date().toISOString(),
   pricingNote: "精选服务参考价按公开在售参考价上浮30%，包含信息筛选、资料整理与咨询服务；最终库存、实名和换绑条件以客服实时复核为准。",
-  sourceAudit: { visibleOnFrontend: false, verifiedRule: "详情页未出现商品已下架或商品已出售", selectedCount: selected.length },
+  sourceAudit: {
+    visibleOnFrontend: false,
+    verifiedRule: "详情页未出现商品已下架或商品已出售",
+    imageRule: "仅展示详情页公开的真实商品截图；不再生成模板占位图",
+    selectedCount: selected.length,
+    productsWithImages: selected.filter((item) => item.images?.length).length,
+    imageCount: selected.reduce((sum, item) => sum + (item.images?.length || 0), 0)
+  },
   products: selected.map(buildProduct)
 };
 
-await fs.writeFile(new URL("../data/products.json", import.meta.url), `${JSON.stringify(output, null, 2)}\n`, "utf8");
-console.log(`同步完成：${output.products.length} 个真实可购买账号，全部配置 5 张原创展示图。`);
+await fs.writeFile(dataUrl, `${JSON.stringify(output, null, 2)}\n`, "utf8");
+console.log(`同步完成：${output.products.length} 个真实可购买账号，共 ${output.sourceAudit.imageCount} 张真实商品截图。`);

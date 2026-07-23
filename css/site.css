@@ -217,6 +217,7 @@ img { max-width: 100%; display: block; }
 .thumb { width: 62px; height: 62px; padding: 2px; flex: 0 0 auto; overflow: hidden; border: 2px solid transparent; border-radius: 8px; background: #fff; cursor: pointer; }
 .thumb.is-active { border-color: var(--accent); }
 .thumb img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-count { margin: 9px 2px 0; color: var(--muted); font-size: 11px; }
 .detail { padding: 34px 30px; }
 .detail-game b, .detail-game small { display: block; }
 .detail-game small { color: var(--muted); font-size: 10px; }
