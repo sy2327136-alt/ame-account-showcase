@@ -1,14 +1,14 @@
 {
   "version": 3,
-  "updatedAt": "2026-07-24T10:31:12.841Z",
+  "updatedAt": "2026-07-24T14:17:36.385Z",
   "pricingNote": "精选服务参考价按公开在售参考价上浮30%，包含信息筛选、资料整理与咨询服务；最终库存、实名和换绑条件以客服实时复核为准。",
   "sourceAudit": {
     "visibleOnFrontend": false,
     "verifiedRule": "详情页未出现商品已下架或商品已出售",
     "selectedCount": 200,
     "imageRule": "仅展示详情页公开的真实商品截图；不再生成模板占位图",
-    "productsWithImages": 20,
-    "imageCount": 450
+    "productsWithImages": 22,
+    "imageCount": 487
   },
   "products": [
     {
@@ -835,7 +835,7 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/PW27LJK/6",
       "sourcePrice": 500000,
       "sourceTitle": "Lv283 ，皮肤总价值122170，未定级，总皮肤193，刀皮24枪皮169(终极2传奇34卓越9)，套装6(传奇6)，创纪元套装，具体详情看图",
-      "sourceCheckedAt": "2026-07-24T10:31:04.602Z",
+      "sourceCheckedAt": "2026-07-24T14:17:28.684Z",
       "status": "active",
       "featured": true,
       "sales": 0,
@@ -923,7 +923,7 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/NYWK1R/6",
       "sourcePrice": 160000,
       "sourceTitle": "2.27 玄机【把酒临风】【已用天赏石6】【未用天赏石1】【转盘外观2】天霓染1, 天赏发型2, 副本外观9, 馆藏5级, 灵韵7, 3国色, 254750衣品, 55780国色值, 未用天赏石, 253套时装, 详情见图",
-      "sourceCheckedAt": "2026-07-24T10:31:04.619Z",
+      "sourceCheckedAt": "2026-07-24T14:17:28.580Z",
       "status": "active",
       "featured": true,
       "sales": 0,
@@ -1213,7 +1213,7 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/TD50KT/6",
       "sourcePrice": 120000,
       "sourceTitle": "【再战十年】13.93万象，魅力4070，2首饰镇派(1级项链1级手镯)，1特效，天人合一23重势如破竹17重威如天狱20重怒如山火23重，双蝶变明河若空游天衣紫宸红阑曼醉花夕燕尔试问天心等9套商城时装51.8W天赏积分，鹿烟双蝶变发，裂宇流星凤舞九天炼武洞察炼武力道悲回风，全身琢磨平均33，5陨焰之石碎片2玲珑焰7梅蕊之卷70镇如五岳7势如破竹5威如天狱1491怒火如山310金色师妹心法残页自选26基础金色棋子自选12稀有金色棋子自选20曲无忆笑道人自选1琳琅瑰玉1洛水云叶自选144焕彩之砂137随心染1照性丹1改名卡",
-      "sourceCheckedAt": "2026-07-24T10:31:07.093Z",
+      "sourceCheckedAt": "2026-07-24T14:17:30.033Z",
       "status": "active",
       "featured": false,
       "sales": 0,
@@ -1310,7 +1310,7 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/C6LQRD/6",
       "sourcePrice": 120000,
       "sourceTitle": "贵族8 荣耀典藏2 无双2 珍品传说5 星元皮肤1 传说皮肤21 史诗皮肤58 皮肤数量189 皮肤价值:158020 天幕1 英雄118 永恒钻石IV 总场次4478",
-      "sourceCheckedAt": "2026-07-24T10:31:06.144Z",
+      "sourceCheckedAt": "2026-07-24T14:17:30.190Z",
       "status": "active",
       "featured": false,
       "sales": 0,
@@ -1346,7 +1346,7 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/F39AQX/6",
       "sourcePrice": 383400,
       "sourceTitle": "【3红装-15粉装-10粉枪-15载具-6珍稀飞行器-76套装-110枪皮-21局内动作】卓越收藏家：69级 热力值：63392 历史最高段位：卓越王牌19星 王牌印记：7 卓越印记：2 Lv:52",
-      "sourceCheckedAt": "2026-07-24T10:31:07.622Z",
+      "sourceCheckedAt": "2026-07-24T14:17:31.416Z",
       "status": "active",
       "featured": false,
       "sales": 0,
@@ -1384,7 +1384,7 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/SA2MLDR/6",
       "sourcePrice": 78800,
       "sourceTitle": "总资产172.7M，哈夫币2100w，近战1 枪皮数量301，露娜-黑天际线红狼-蚀金玫瑰露娜-金牌射手红狼-电锯惊魂无名-守夜人深蓝-不破誓约蜂医-送葬人无题密令，近战-黑鹰，战场等级36上等兵，行动等级60铂金，安全箱、典藏皮肤颜色请以游戏内数据为准，详情请看图",
-      "sourceCheckedAt": "2026-07-24T10:31:08.460Z",
+      "sourceCheckedAt": "2026-07-24T14:17:31.661Z",
       "status": "active",
       "featured": false,
       "sales": 0,
@@ -1427,7 +1427,7 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/PW1N9KM/6",
       "sourcePrice": 258000,
       "sourceTitle": "可议价可二次实名需等待s8神话标s9超凡标这赛季超三目前超二 Lv278 ，皮肤总价值71740，超凡II，总皮肤135，刀皮14枪皮121(终极3传奇17卓越12)，套装3(传奇3)，创纪元套装，具体详情看图",
-      "sourceCheckedAt": "2026-07-24T10:31:09.005Z",
+      "sourceCheckedAt": "2026-07-24T14:17:32.785Z",
       "status": "active",
       "featured": false,
       "sales": 0,
@@ -1532,7 +1532,7 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/NYY48Q/6",
       "sourcePrice": 220000,
       "sourceTitle": "命运你假糍粑。命运你阿帕次。急出急出急出 9.06 素问【把酒临风】【已用天赏石31】【转盘外观3】天霓染4, 天赏发型18, 副本外观9, 馆藏7级, 灵韵3, 15国色, 364265衣品, 123775国色值, 293套时装, 详情见图",
-      "sourceCheckedAt": "2026-07-24T10:31:09.944Z",
+      "sourceCheckedAt": "2026-07-24T14:17:33.090Z",
       "status": "active",
       "featured": false,
       "sales": 0,
@@ -1822,11 +1822,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/TDC83K/6",
       "sourcePrice": 128000,
       "sourceTitle": "【与君归】23.43神刀，魅力18205，1镇派(1级主武)，4首饰镇派(1级项链1级戒指1级戒指1级手镯)，3特效，镇如五岳33重天人合一38重势如破竹36重威如天狱31重怒如山火41重动如雷震22重，舒音风华朱莱九州风雷焰丹砂(一阶)羽踏云(一阶)地泽临樱月幻梦素衣何问时光吹雪熔血河，玉漫漫春日宴临洮曲今生簪花兔子健将归航小甜心明河杏时茶逐风鸢等17套商城时装5.4W天赏积分，冰凌临洮曲小甜心发，星郎香雪海发，裂宇流星凤舞九天天外飞仙炼武洞察炼武气劲，全身琢磨平均45，带7琳琅瑰玉4陨焰之石碎片2玲珑炉劫火1夜耀之晶17缘材深3湮灭质料1紫刃流萤质料1大悲赋质料4孔雀翎质料213金句材料自选礼盒154周享兑换券278琳琅瑰石115绘彩晶尘17绘彩晶玉30千色之染10冰凌赤霄自选礼40洛水云叶鹿烟星郎苏梅自选1洛水云叶自选4冰凌10勿忘我1返魂草1苏梅1星郎6鹿烟4洛水448随心染匣630彩纫之匣1四星绘板自选3玲珑之壁217焕彩之砂80点血截脉残页2349活跃币11珍藏兑换券32梅蕊之卷（踏梅香白公子已到期）",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-24T14:17:34.343Z",
       "status": "active",
       "featured": false,
       "sales": 0,
-      "sortOrder": 966
+      "sortOrder": 966,
+      "imageCount": 0
     },
     {
       "id": "acc-1957-DDVFPRS",
@@ -1844,8 +1845,24 @@
       "tags": [
         "可二次实名"
       ],
-      "coverImage": "./assets/hero-duo.webp",
-      "images": [],
+      "coverImage": "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_sCvUApof_1784710246352.png?x-oss-process=style/titleImg",
+      "images": [
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_sCvUApof_1784710246352.png?x-oss-process=style/titleImg",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_hISROuCF_1784710246809.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_lgtJLdGX_1784710247016.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_YcbGiLLu_1784710247102.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_OoDtadpw_1784710247190.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_jzHHJZOp_1784710247272.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_hTKhTiFR_1784710247494.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_pVmqCHGE_1784710247811.jpg?group=g1&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_moYAeBbn_1784710248112.jpg?group=g1&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_DRDJVfFb_1784710248321.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_gHPDAKLb_1784710248476.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_QyOEjoXG_1784710248622.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_GthYjzup_1784710248855.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_gMuZjXQG_1784710248991.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260722/tools_WREqutTq_1784710249123.jpg?x-oss-process=style/jpg90"
+      ],
       "description": "已从本期公开在售信息中筛选，重点配置为资料完整、价位合理。下单前请联系客服再次确认库存、实名与换绑条件。",
       "specs": {
         "账号平台": "官服",
@@ -1857,11 +1874,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/DDVFPRS/6",
       "sourcePrice": 95000,
       "sourceTitle": "lv67，2典藏，1至臻，4级臻享，专业刷锅小猪妖，狂獠覆面·黑曜，苍霆狼首，82金枪，28金刀，7传说角色，精绝女王，炼狱蝎王-粉墨重华，血怨-噬魂，黑天使之刃-叶脉光流x3，武装斧头x4，稳赢之手x2，冰点双锋，樱之殇x2，沙暴冷锋x4，鬼影长枪，木葫芦，蛇神之剑x5，血怨，死亡之拥，蛇神之矛x2，死神镰刀，裁决之眼x4，战争矩阵x3，飓风之龙，元宵来袭，精绝兽神-狂野金魂，玄凌飞刃，幽冥毒皇，振弦x8，黄沙风暴，死神猎手x2，纯白至上，能源之影x3，战争矩阵-暮天流霞，心有凌兮，苔色暴风x3，维和者-攀登，冥河之矛，超级复合弓x5，胜利誓约-绿潮，乘风快递-航迹，精绝兽神-女王权柄x5，雷霆999x2，雷霆之影-金炼，生命线-蝶与寰宇，哈士奇好友，生命线-青空橙影，火神炎帝-探索颂歌，生命线，黑金仲裁者-审判重锤，乘风快递x2，超级复合弓-沙漠涂装x3，胜利誓约x2，生命线-冬日耀阳x3，春雷震，钢铁轰鸣，暗夜之殇，往日速递，收割者x2，维和者x4，浪里白条x2，猪猪榴弹发射器，刺隐，夜影之逝，黄金Z型步枪，鬼铜蚀-逆火而上，高级自修复磁暴塔，高级防空导弹，高级天启，高级修理站，高级天网，高级歼灭者，高级破坏者，其他详情看图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-24T14:17:34.589Z",
       "status": "active",
       "featured": false,
       "sales": 0,
-      "sortOrder": 965
+      "sortOrder": 965,
+      "imageCount": 15
     },
     {
       "id": "acc-7-C6MFHJ",
@@ -1881,8 +1899,31 @@
         "珍品传说1",
         "可二次实名"
       ],
-      "coverImage": "./assets/hero-duo.webp",
-      "images": [],
+      "coverImage": "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_RzPWDtNt_1784227859570.png?x-oss-process=style/titleImg",
+      "images": [
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_RzPWDtNt_1784227859570.png?x-oss-process=style/titleImg",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_PyrxLIpF_1784227860123.jpg?group=g1&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_NIUtNUnK_1784227860417.jpg?group=g1&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_RNyxVMSw_1784227860878.jpg?group=g1&index=3&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_mkMhuNda_1784227861360.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_PevfoMMI_1784227861678.jpg?group=g2&index=1&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_FTpubwdl_1784227862073.jpg?group=g2&index=2&x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_JODYvblg_1784227862307.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_CwucCyIj_1784227862417.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_xaXdEInI_1784227862562.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_byQRQrtY_1784227862707.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_VqxBLlMa_1784227862828.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_yRGAnnWw_1784227863039.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_ALufluOZ_1784227861219.jpg?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_XJcuwrjJ_1784227845699.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_yjnpwwsG_1784227865098.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_WpNqONsg_1784227865478.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_aGEZjuKQ_1784227864150.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_PtonOSUU_1784227864646.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_jUmbzboS_1784227863689.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_qPfEFcIS_1784227863225.png?x-oss-process=style/jpg90",
+        "https://pzdsoss.pzds.com/c/2/goods//meta/20260717/tools_SYISOscL_1784227862941.jpg?x-oss-process=style/jpg90"
+      ],
       "description": "已从本期公开在售信息中筛选，重点配置为皮肤数量100、珍品传说1、无双2、套装2。下单前请联系客服再次确认库存、实名与换绑条件。",
       "specs": {
         "配置亮点 1": "皮肤数量100",
@@ -1899,11 +1940,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/C6MFHJ/6",
       "sourcePrice": 57000,
       "sourceTitle": "【省标李白】 贵族0 无双2 珍品传说1 星元皮肤1 传说皮肤4 星元套装2 史诗皮肤24 打野36段 皮肤数量100 英雄118 最强王者 总场次3075，详情看图",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-24T14:17:35.715Z",
       "status": "active",
       "featured": false,
       "sales": 0,
-      "sortOrder": 964
+      "sortOrder": 964,
+      "imageCount": 22
     },
     {
       "id": "acc-8-F27V4M",
@@ -1934,11 +1976,12 @@
       "sourceUrl": "https://www.pzds.com/goodsDetails/F27V4M/6",
       "sourcePrice": 42500,
       "sourceTitle": "价格可以议 【0载具-0珍稀飞行器-72套装-121枪皮】热力值：32634 精英收藏家：33级 历史最高段位：超级王牌 王牌印记：1 Lv:67",
-      "sourceCheckedAt": "2026-07-22T21:35:14.387Z",
+      "sourceCheckedAt": "2026-07-24T14:17:35.978Z",
       "status": "active",
       "featured": false,
       "sales": 0,
-      "sortOrder": 963
+      "sortOrder": 963,
+      "imageCount": 0
     },
     {
       "id": "acc-391-SA2WD8B",
